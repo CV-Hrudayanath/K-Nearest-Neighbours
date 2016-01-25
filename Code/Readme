@@ -1,0 +1,27 @@
+-Before running the code create a file with all classes written in it.
+Ex- iris_classes.dat file contain names of the classes like Iris-setosa,etc in each line. 
+
+-Once the classes file is written run the code run_knn.m using the parameters.
+
+run_knn(dataset , size , training_set_size ,k, no_of_attributes ,no_of_classes ,classifier_index ,classes_file, iterations , kfold_flag)
+
+dataset - dataset on which we wish to run the code. Ex- iris.dat
+
+size - Dataset size
+
+training_set_size - send the training set size for the approach. Ex - 50% size in random subsampling approach
+
+k - number of nearest neighbours for k-nn classifier i.e k =1 or k=3 .
+
+no_of_attributes - Number of attributes the data point has. ( Excluding class attribute )
+
+no_of_classes - Number of classes.
+
+classifier_index - index of the classifier attribute in the data point.
+
+classes_file - The file which contains the names of all classes. 
+
+iterations - No of times we wish to run the code.
+
+kfold_flag - kfold_flag == 1 => Uses 5-fold cross validation approach.  
+             kfold_flag == 0 => Uses random sampling approach.  
